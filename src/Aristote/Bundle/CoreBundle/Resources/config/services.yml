@@ -1,0 +1,7 @@
+parameters:
+#    aristote_core.example.class: Aristote\Bundle\CoreBundle\Example
+
+services:
+#    aristote_core.example:
+#        class: %aristote_core.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
