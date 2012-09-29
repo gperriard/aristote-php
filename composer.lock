@@ -1,5 +1,5 @@
 {
-    "hash": "710c94da02b82cee2c16a824ad353742",
+    "hash": "b7eba32680bb35e033a4d41e0199b0ca",
     "packages": [
         {
             "name": "doctrine/common",
@@ -68,6 +68,47 @@
                 "persistence"
             ],
             "time": "1348120518"
+        },
+        {
+            "name": "doctrine/data-fixtures",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/data-fixtures.git",
+                "reference": "b29bad9738fada9486961f60542f2d2d77c7b501"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/doctrine/data-fixtures/zipball/b29bad9738fada9486961f60542f2d2d77c7b501",
+                "reference": "b29bad9738fada9486961f60542f2d2d77c7b501",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "time": "1348136794",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\DataFixtures": "lib/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com",
+                    "homepage": "http://www.jwage.com/"
+                }
+            ],
+            "description": "Data Fixtures for all Doctrine Object Managers",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database"
+            ]
         },
         {
             "name": "doctrine/dbal",
@@ -197,6 +238,59 @@
                 "orm",
                 "persistence",
                 "dbal"
+            ]
+        },
+        {
+            "name": "doctrine/doctrine-fixtures-bundle",
+            "version": "dev-master",
+            "target-dir": "Doctrine/Bundle/FixturesBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
+                "reference": "186d605aa6b592bd577e07e0e9a2c420b02b2492"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/doctrine/DoctrineFixturesBundle/zipball/186d605aa6b592bd577e07e0e9a2c420b02b2492",
+                "reference": "186d605aa6b592bd577e07e0e9a2c420b02b2492",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "doctrine/data-fixtures": "*",
+                "symfony/doctrine-bridge": "2.1.*",
+                "doctrine/doctrine-bundle": "1.0.*"
+            },
+            "time": "1345465418",
+            "type": "symfony-bundle",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Bundle\\FixturesBundle": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Doctrine Project",
+                    "homepage": "http://www.doctrine-project.org"
+                }
+            ],
+            "description": "Symfony DoctrineFixturesBundle",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "persistence",
+                "Fixture"
             ]
         },
         {
@@ -1158,12 +1252,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony/symfony.git",
-                "reference": "5fff62644f7f52b720b9ba9df6cfe34593a34604"
+                "reference": "bd845b3bbcb13972924fe3030e37fbee8dc04e47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/symfony/zipball/5fff62644f7f52b720b9ba9df6cfe34593a34604",
-                "reference": "5fff62644f7f52b720b9ba9df6cfe34593a34604",
+                "url": "https://github.com/symfony/symfony/zipball/bd845b3bbcb13972924fe3030e37fbee8dc04e47",
+                "reference": "bd845b3bbcb13972924fe3030e37fbee8dc04e47",
                 "shasum": ""
             },
             "require": {
@@ -1212,7 +1306,7 @@
                 "propel/propel1": "dev-master",
                 "monolog/monolog": "dev-master"
             },
-            "time": "1348838100",
+            "time": "1348854550",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1298,18 +1392,18 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Twig.git",
-                "reference": "b8c917972f74da88f0e930ea32a90566739d87ac"
+                "reference": "73ab8ff50c53a3a6046b3a499bd0c6412afc344f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/zipball/b8c917972f74da88f0e930ea32a90566739d87ac",
-                "reference": "b8c917972f74da88f0e930ea32a90566739d87ac",
+                "url": "https://github.com/fabpot/Twig/zipball/73ab8ff50c53a3a6046b3a499bd0c6412afc344f",
+                "reference": "73ab8ff50c53a3a6046b3a499bd0c6412afc344f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "1348667791",
+            "time": "1348869347",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1348,6 +1442,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "mopa/bootstrap-bundle": 20
+        "mopa/bootstrap-bundle": 20,
+        "doctrine/doctrine-fixtures-bundle": 20
     }
 }
